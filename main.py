@@ -84,9 +84,6 @@ html, body {
     margin-top: 25px;
 }
 
-html, body, [class*="css"] {
-    color: white !important;
-}
 
 </style>
 """, unsafe_allow_html=True)
@@ -160,11 +157,6 @@ Understand the sentiment behind any piece of text.
 # Input
 # -----------------------------
 
-st.markdown(
-    '<div class="card">',
-    unsafe_allow_html=True
-)
-
 text = st.text_area(
     "Enter your text",
     placeholder="Example: I absolutely loved this movie! 😍",
@@ -175,12 +167,6 @@ analyze = st.button(
     "✨ Analyze Sentiment",
     use_container_width=True
 )
-
-st.markdown(
-    '</div>',
-    unsafe_allow_html=True
-)
-
 
 # -----------------------------
 # Prediction
