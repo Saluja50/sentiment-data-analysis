@@ -23,8 +23,29 @@ st.markdown("""
 <style>
 
 .stApp {
-    background: #080b14;
-    color: white;
+    background-color: #080b14 !important;
+    color: white !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background-color: #080b14 !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: #080b14 !important;
+}
+
+[data-testid="stToolbar"] {
+    background-color: #080b14 !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #080b14 !important;
+}
+
+html, body {
+    background-color: #080b14 !important;
+    color: white !important;
 }
 
 .block-container {
@@ -61,6 +82,10 @@ st.markdown("""
     border-radius: 20px;
     padding: 35px;
     margin-top: 25px;
+}
+
+html, body, [class*="css"] {
+    color: white !important;
 }
 
 </style>
